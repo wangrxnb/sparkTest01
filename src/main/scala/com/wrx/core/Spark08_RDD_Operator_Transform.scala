@@ -19,17 +19,17 @@ object Spark08_RDD_Operator_Transform {
         //         如果抽取放回的场合：表示数据源中的每条数据被抽取的可能次数
         // 3. 第三个参数表示，抽取数据时随机算法的种子
         //                    如果不传递第三个参数，那么使用的是当前系统时间
-//        println(rdd.sample(
-//            false,
-//            0.4
-//            //1
-//        ).collect().mkString(","))
-
         println(rdd.sample(
-            true,
-            2
+            false,
+            0.4
             //1
         ).collect().mkString(","))
+
+//        println(rdd.sample(
+//            true,
+//            2
+//            //1
+//        ).collect().mkString(","))
 
 
         sc.stop()
