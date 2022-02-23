@@ -1,4 +1,4 @@
-package com.atguigu.bigdata.spark.core.rdd.operator.transform
+package com.wrx.core
 
 import java.text.SimpleDateFormat
 import java.util.Date
